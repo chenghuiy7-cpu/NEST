@@ -1,0 +1,5 @@
+transport=qdma
+traddr=qdma01000
+queue_size=128
+nr_io_queues=3
+nqn=nqn.2014-08.org.nvmexpress:nvmq0

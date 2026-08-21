@@ -1,0 +1,32 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  publication-safety:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check shell syntax
+        run: |
+          bash -n \
+            scripts/bootstrap.sh \
+            scripts/apply_overlays.sh \
+            scripts/verify_repository.sh \
+            overlays/tfhe-rs/scripts/lwe_remote_hpu/start_server_129.sh \
+            overlays/tfhe-rs/scripts/lwe_remote_hpu/package_server_129.sh
+
+      - name: Check repository for private artifacts
+        run: ./scripts/verify_repository.sh
+
+      - name: Check Python helper syntax
+        run: |
+          python3 -m compileall -q \
+            overlays/suda/host/applications/vscode-lwe-encrypt-offload \
+            overlays/suda/host/applications/vscode-lwe-encrypt-remote-offload

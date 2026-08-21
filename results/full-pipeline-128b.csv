@@ -1,0 +1,2 @@
+plaintext_bytes,ssd_to_slm_ms,encrypt_program_setup_ms,fpga_encrypt_ms,encrypt_slm_to_host_ms,rpc_round_trip_ms,remote_hpu_prepare_ms,remote_hpu_wait_sync_ms,remote_output_convert_ms,decrypt_host_to_slm_ms,decrypt_program_setup_ms,fpga_decrypt_ms,decrypt_slm_to_host_ms,ssd_write_ms,ssd_readback_ms,online_e2e_ms
+128,18.571,65.503,30.890,6443.969,1228.457,21.418,470.860,22.585,60135.250,61.547,31.713,19.209,3.344,3.271,68209.204

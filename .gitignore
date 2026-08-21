@@ -1,0 +1,55 @@
+# Local configuration and credentials
+.env
+config/*.env
+!config/*.env.example
+*.pem
+*.bincode
+id_rsa*
+*.key
+
+# Reconstructed upstream workspaces
+/work/
+
+# FPGA/board artifacts
+BOOT.bin
+*.bit
+*.bin
+*.dcp
+*.hpu
+*.xclbin
+*.zip
+*.jou
+*.wdb
+*.wcfg
+.Xil/
+*.runs/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+
+# Native/Rust build products
+target/
+build/
+build.*
+*.o
+*.a
+*.so
+*.lo
+*.la
+*.pyc
+__pycache__/
+
+# Raw logs and transient benchmark output
+*.log
+core
+core.*
+hs_err_pid*
+/results/raw/
+/artifacts/
+
+# Editor/OS files
+.vscode/
+.idea/
+*~
+.DS_Store

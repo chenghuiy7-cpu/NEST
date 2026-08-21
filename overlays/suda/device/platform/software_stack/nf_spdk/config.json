@@ -1,0 +1,44 @@
+{
+    "operators": [
+        {
+            "operator_type_id":0,
+            "operator_type_name": "add",
+            "operator_inport_num": 1,
+            "operator_outport_num": 1,
+            "esti_executed_times": 80,
+            "worse_executed_times": 240,
+            "bram_size": 2048,
+            "slot_id" : 0
+        },
+        {
+            "operator_type_id":1,
+            "operator_type_name": "encrypt",
+            "operator_inport_num": 1,
+            "operator_outport_num": 1,
+            "esti_executed_times": 20,
+            "worse_executed_times": 80,
+            "bram_size": 2048,
+            "slot_id" : 1
+        },
+        {
+            "operator_type_id":2,
+            "operator_type_name": "lwe_encrypt",
+            "operator_inport_num": 1,
+            "operator_outport_num": 1,
+            "esti_executed_times": 200,
+            "worse_executed_times": 1000,
+            "bram_size": 2048,
+            "slot_id" : 2
+        },
+        {
+            "operator_type_id":3,
+            "operator_type_name": "lwe_decrypt",
+            "operator_inport_num": 1,
+            "operator_outport_num": 1,
+            "esti_executed_times": 200,
+            "worse_executed_times": 1000,
+            "bram_size": 2048,
+            "slot_id" : 3
+        }
+    ]
+}
