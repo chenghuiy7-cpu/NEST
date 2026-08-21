@@ -40,7 +40,7 @@ NEST/
 ## Quick Start
 
 ```bash
-git clone <NEST_REPOSITORY_URL>
+git clone https://github.com/chenghuiy7-cpu/NEST.git
 cd NEST
 ./scripts/bootstrap.sh
 ```
